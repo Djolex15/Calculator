@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Links-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--HeadStuff-->
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- User interface-->
+    <div class = "calc-background" id="calculator">
+        <h1 id="calc-display">Unesi broj</h1>
+        <div>
+            <button class="calc-btn" onclick="updateDisplay('+')">+</button>
+            <button class="calc-btn" onclick="calculate()">=</button>
+            <button class="calc-btn" onclick="updateDisplay(0)">0</button>
+            <button class="calc-btn" onclick="clearDisplay()">C</button>
+        </div>
+        <div>
+            <button class="calc-btn" onclick="updateDisplay(7)">7</button>
+            <button class="calc-btn" onclick="updateDisplay(8)">8</button>
+            <button class="calc-btn" onclick="updateDisplay(9)">9</button>
+            <button class="calc-btn" onclick="updateDisplay('/')">/</button>
+        </div>
+        <div>
+            <button class="calc-btn" onclick="updateDisplay(4)">4</button>
+            <button class="calc-btn" onclick="updateDisplay(5)">5</button>
+            <button class="calc-btn" onclick="updateDisplay(6)">6</button>
+            <button class="calc-btn" onclick="updateDisplay('-')">-</button>
+            <button class="calc-btn" onclick="updateDisplay('√')">√</button>
+
+        </div>
+        <div>
+            <button class="calc-btn" onclick="updateDisplay(1)">1</button>
+            <button class="calc-btn" onclick="updateDisplay(2)">2</button>
+            <button class="calc-btn" onclick="updateDisplay(3)">3</button>
+            <button class="calc-btn" onclick="updateDisplay('*')">*</button>
+            <button class="calc-btn" onclick="updateDisplay('^')">^</button>
+        </div>
+    </div>
+    <!--Links-->
+    <script src="logic.js"></script>
+</body>
+</html>
